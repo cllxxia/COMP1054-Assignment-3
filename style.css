@@ -1,0 +1,357 @@
+html{
+    background-image: linear-gradient(to right, #f2e846, #f7cf48, #f4b506);
+}
+
+header {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px 20px; 
+    border-bottom: 2px solid white;
+}
+
+/*Logo container*/
+.logo {
+    margin-right: 20px;
+}
+
+/*Adjusting logo size*/
+.logo img {
+    height: 120px; 
+    width: auto; 
+}
+
+/*Navbar container*/
+.navbar {
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+}
+
+/*Styling navbar list*/
+.navbar nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    gap: 40px;
+}
+
+/*Navbar list items*/
+.navbar ul li {
+    margin-right: 20px;
+}
+
+/*Navbar link styling*/
+.navbar ul li a {
+    color: #6A0DAD;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/*Adding hover effect to navbar*/
+.navbar ul li a:hover {
+    background-color: white;
+}
+.section-1{
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+/*Styling h2(SOUR SWEET GONE)*/
+.section-1 h2{
+    font-family: "DynaPuff", system-ui;
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 900;
+    margin: 0;
+    color: black;
+    text-align: center;
+}
+/*Adding shadow effect to images of candy*/
+.section-1 img{
+    filter: drop-shadow(3px 3px 2px rgba(0,0,0,0.3));
+}
+
+.section-1 h2 span{
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+/*Adding hover effect and colors to h2(SOUR SWEET GONE)*/
+.section-1 h2 span:hover{
+    transform: scale(1.05);
+    text-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.sour{
+    color: #6A0DAD;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.sweet{
+    color: #FF1493;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gone{
+    color: #00BFFF;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/*SECTION 2*/
+
+.section-2{
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+/*Adding hover effect to img of candy in section 2*/
+.section-2 img:hover{
+    transform: scale(1.2);
+}
+/*Styling paragraph in section 2, using backdrop filter for readability*/
+.section-2 p{
+    font-family: "DynaPuff", system-ui;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(15px); 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    display: inline-block;
+}
+/*Adding color to match the fruit type*/
+.lemon{
+     color: #F57F17;
+} 
+.lime {
+     color: #2E7D32; 
+}
+.orange {
+     color: #E65100; 
+}
+.raspberry {
+     color: #C2185B; 
+}
+.blue-rasp {
+     color: #0D47A1; 
+}
+/*SECTION 3*/
+
+/*Fun facts section*/
+.section-3 {
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    border-top: 4px dashed white;
+  }
+  /*Styling fun facts title*/
+  .section-3 h3 {
+    font-size: 2.5rem;
+    font-family: "DynaPuff", system-ui;
+    color: #6A0DAD;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+  }
+  /*Styling fun facts*/
+  .section-3 p {
+    font-size: 1.2rem;
+    font-family: "DynaPuff", system-ui;
+    font-weight: 400;
+    color: black;
+    margin: 1rem auto;
+    max-width: 700px;
+    padding: 0.8rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  /*Adding hover effect to facts*/
+  .section-3 p:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+  }
+  /*Adjusting image size*/
+  .section-3 img {
+    width: 250px;
+    margin-top: 1.5rem;
+}
+  /*Adding hover effect to the bag of candy*/
+  .section-3 img:hover {
+    transform: rotate(5deg) scale(1.1) translateY(-10px);
+    filter: drop-shadow(0 10px 15px rgba(255, 107, 129, 0.5)) brightness(1.1);
+  }
+  
+  /*Nutrition Facts section*/
+  /*Styling nutrition facts container*/
+  .nutrition-facts {
+    background: white;
+    padding: 2rem;
+    max-width: 400px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border: 3px solid #f9ca24;
+  }
+  /*Styling nutrition facts title*/
+  .nutrition-facts h4 {
+    font-size: 2rem;
+    color: #ff4757;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Lexend", sans-serif;
+  }
+  /*Styling nutrition facts paragraph*/
+  .nutrition-facts > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 1rem;
+    font-style: italic;
+    font-family: "Lexend", sans-serif;
+  }
+  /*Styling nutrition facts table*/
+  .nutrition-facts table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-family: "Lexend", sans-serif;
+  }
+  /*Styling nutrition facts table header*/
+  .nutrition-facts th {
+    background: #ff4757;
+    color: white;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  /*Styling nutrition facts table data*/
+  .nutrition-facts td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  /*Styling nutrition facts table rows*/
+  .nutrition-facts tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+/*Adding hover effect to nutrition facts table rows*/
+  .nutrition-facts tr:hover {
+    background-color: #fff8e1;
+  }
+  /*Styling nutrition facts percentage*/
+  .nutrition-facts .percentage {
+    color: #ff4757;
+    font-weight: bold;
+  }
+  
+  .nutrition-facts strong {
+    color: #333;
+  }
+
+  /*FOOTER*/
+/*Styling footer container*/
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 3px solid white;
+    background-color: #6A0DAD;
+  }
+/*Adding background color and padding to form*/
+  .contact-form {
+    background: rgba(255,255,255,0.1);
+    padding: 0.75rem;
+   }
+  /*Styling contact form title*/
+  .contact-form h6 {
+    color: #f9ca24;
+    font-size: 0.9rem;
+    font-family: "Lexend", sans-serif;
+    margin: 0 0 0.75rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  /*Styling contact form*/
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  /*Styling contact form fields*/
+  .contact-form div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  /*Styling contact form labels*/
+  .contact-form label {
+    color: white;
+    font-family: "Lexend", sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.2;
+  }
+  /*Styling contact form input fields*/
+  .contact-form input {
+    padding: 0.4rem 0.5rem;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+  /*Styling contact form submit button*/
+  .contact-form input[type="submit"] {
+    background: #ff4757;
+    color: white;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+  }
+  
+  .footer-content {
+    padding: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  /*Styling footer content title*/
+  .footer-content h5 {
+    color: #f9ca24;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #f9ca24; 
+    padding-bottom: 0.5rem;
+    display: inline-block;
+  }
+  
+  .footer-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  /*Styling list items (TOU, PRIVACY POLICY, ETC.)*/
+  .footer-content li {
+    color: #f9ca24;
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
+    line-height: 1.4;
+    border-bottom: 1px solid #eee; 
+  }
+  
+
+
+  
